@@ -1,0 +1,50 @@
+#Git, Github Interview questions
+
+###Contents
+~Creating a Git repo through the terminal
+~
+~
+~
+
+#Creating a Git repo through the terminal
+>git init (initialix=zing a repo)
+>
+>.git/hooks/pre-commit (executed every time you run the git commit command)
+>
+>git add filename.extnsn (add a file to the git)
+>
+>git status (checks the status of added and not added files on the git)
+>
+>git diff (shows the unadded changes in the file)
+>
+>git commit -m "comment message" (to commit the added files to the local repo).
+>
+>git log (to check the status of the commited files)
+>
+>git push (pushes all the commits to the github repo)
+>
+>git push -u "remote name" "branch name" (push an existing repository from the command line)
+>
+>git clone URL (to clone a github repo).
+>
+>git remote -v (to check the git remote refference)
+>
+>git remote add "remote name" "remote URL"  (to add a git remote reffe rence)
+>
+>Complete Flow:
+Creating a  new repo:
+echo "# TestRepo" >> README.md
+ git init  
+ git add README.md
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/arjunthakur007/TestRepo.git
+ git push -u origin main
+
+>Psuhing an existing repo:
+ git remote add origin https://github.com/arjunthakur007/TestRepo.git
+ git branch -M main 
+ git push -u origin main
+
+
+ 
